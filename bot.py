@@ -12,7 +12,7 @@ from pyrogram import Client
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
                                        
-  LOG_CHANNEL= -1001705745044
+  LOG_CHANNEL= "-1001705745044"
 
   AUTH_USERS =Config.AUTH_USERS
 
