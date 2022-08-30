@@ -9,7 +9,18 @@ import os
 
 from config import Config
 from pyrogram import Client 
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("pyrogram").setLevel(logging.WARNING
+                                       
+  LOG_CHANNEL =Config.LOG_CHANNEL
+
+  AUTH_USERS =Config.AUTH_USERS
+
+  DB_URL =Config.DB_URL
+
+ DB_NAME =Config.DB_NAME
+
+
+
 
 
 if __name__ == "__main__" :
@@ -22,10 +33,6 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
         plugins=plugins,
-        workers=100,
-        LOG_CHANNEL =Config.LOG_CHANNEL,
-        AUTH_USERS =Config.AUTH_USERS,
-        DB_URL =Config.DB_URL,
-        DB_NAME =Config.DB_NAME
+        workers=100
     )
     app.run()
