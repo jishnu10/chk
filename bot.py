@@ -9,7 +9,8 @@ import os
 
 from config import Config
 from pyrogram import Client 
-logging.getLogger("pyrogram").setLevel(logging.WARNING
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
                                        
   LOG_CHANNEL =Config.LOG_CHANNEL
 
