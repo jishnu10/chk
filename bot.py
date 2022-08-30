@@ -22,6 +22,10 @@ if __name__ == "__main__" :
         api_id=Config.API_ID,
         api_hash=Config.API_HASH,
         plugins=plugins,
-        workers=1000
+        workers=100
+        LOG_CHANNEL = config.LOG_CHANNEL
+        AUTH_USERS = config.AUTH_USERS 
+        DB_URL = config.DB_URL
+      DB_NAME = config.DB_NAME
     )
     app.run()
