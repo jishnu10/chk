@@ -23,9 +23,9 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins,
         workers=100,
-        LOG_CHANNEL = config.LOG_CHANNEL,
-        AUTH_USERS = config.AUTH_USERS,
-        DB_URL = config.DB_URL,
-        DB_NAME = config.DB_NAME
+        LOG_CHANNEL =Config.LOG_CHANNEL,
+        AUTH_USERS =Config.AUTH_USERS,
+        DB_URL =Config.DB_URL,
+        DB_NAME =Config.DB_NAME
     )
     app.run()
